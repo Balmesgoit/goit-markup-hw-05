@@ -44,7 +44,7 @@ img {
 .navheader {    
     display: inline-flex;
     align-items: center;
-    gap: 76px
+    gap: 76px;
 }
 
 .webstudio {
@@ -85,6 +85,20 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0 24px;
+    position: relative;
+    color: #404bbf;
+    transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.headerstudio::after {
+    content: 'This is the text in ::after';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
 }
 
 .headerstudio:hover {
@@ -153,6 +167,7 @@ img {
     min-width: 169px;
     height: 56px;
     border: none;
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .herobutton:hover {background-color:#404bbf;}
@@ -185,7 +200,7 @@ img {
 
 
 .item {
-    flex-basis: calc((100% - 72px) / 4)
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 /*ICON*/
@@ -235,7 +250,7 @@ img {
 }
 
 .secthree-item {
-    flex-basis: calc((100% - 3 * 16px) / 3)
+    flex-basis: calc((100% - 3 * 16px) / 3);
 }
 
 .secthree-item:not(:last-child) {
@@ -252,7 +267,7 @@ img {
 
 .fourthlist {
     background: var(--WHITE, #FFF);    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .fourthlist:not(:last-child) {
@@ -278,6 +293,8 @@ img {
     align-items: center;
     list-style-type: none;
     gap: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soclistlink:hover {
@@ -330,7 +347,7 @@ img {
 
 .custitem {
     height: 88px;
-    width: calc((100%-120px)/ 6)
+    width: calc((100%-120px)/ 6);
 }
 
 .fiflink {
@@ -341,7 +358,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#8e8f99
+    color:#8e8f99;
+    transition-property:   border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fiflink:hover {
