@@ -195,7 +195,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
-    background-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--web);
     cursor: pointer;
     padding: 16px 32px;
     align-items: center;
@@ -205,6 +205,7 @@ img {
     min-width: 169px;
     height: 56px;
     border: none;
+    transition: background-color 250ms cubic-bezier(.4, 0, .2, 1);
 }
 
 .herobutton:hover {background-color:#404bbf;}
