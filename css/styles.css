@@ -103,8 +103,21 @@ img {
 }
 
 .headerlink {
+    color: var(--ocean);
     transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+}
+
+headerlink::after {
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: var(--ocean);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+
 }
 
 .headerstudio {
@@ -116,11 +129,11 @@ img {
     padding: 24px 0 24px;
 }
 
-.headerstudio:hover {
+.headerlink:hover {
         color: #404bbf;
 }
 
-.headerstudio:focus {
+.headerlink:focus {
         color: #404bbf;
 }
 
