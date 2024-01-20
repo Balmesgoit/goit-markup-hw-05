@@ -25,16 +25,22 @@
             
                 <!--Menu Area-->             
                 <ul class="list navulheader">
-                    <li class="navulheader-item"><a class="headerstudio link" href="./index.html">Studio</a></li>
-                    <li class="navulheader-item"><a class="headerstudio link" href="./portfolio.html">Portfolio</a></li>
-                    <li class="navulheader-item"><a class="headerstudio link" href="">Contacts</a></li>
+                    <li class="navulheader-item">
+                        <a class="headerstudio link" href="./index.html">Studio</a>
+                    </li>
+                    <li class="navulheader-item">
+                        <a class="headerstudio link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="navulheader-item">
+                        <a class="headerstudio link" href="">Contacts</a>
+                    </li>
                 </ul> 
             </nav>
             
             <address class="adstyle">
                 <ul class="list navulheader">
                     <li class="navulheader-item"><a class="concolor link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="navulheader-item"><a class="concolor link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li class="navulheader-item"><a     class="concolor link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
             
@@ -47,7 +53,7 @@
             <img src="./images/heroimage.jpg" alt="" max-width="1440px"/>
             <div class="displayflex container">
                 <h1 class="hone">Effective Solutions for Your Business</h1>
-                <button class="herobutton">Order Service</button>
+                <button class="herobutton" type="button" data-modal-open="">Order Service</button>
             </div>
         </section>
         <!--Section 2-->
@@ -395,6 +401,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="modal-close" data-modal-close>
+            <svg class="modal-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+   
 </body>
 
 </html>
