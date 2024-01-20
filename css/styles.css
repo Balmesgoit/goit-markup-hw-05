@@ -108,8 +108,8 @@ img {
     position: relative;
 }
 
-headerlink::after {
-    content: '';
+.headerlink::after {
+    content: "";
     height: 4px;
     width: 100%;
     background-color: var(--ocean);
@@ -117,7 +117,6 @@ headerlink::after {
     position: absolute;
     left: 0;
     bottom: -24px;
-
 }
 
 .headerstudio {
