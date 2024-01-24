@@ -1,0 +1,289 @@
+:root {
+    --iris: #4d5ae5;
+    --navyblue: #2e2f42;
+    --studiolist: #6569c0;
+    --add: #434455;
+    --white: #FFFFFF;
+    --cloud: #f4f4fd;
+    --ocean: #404bbf;
+    --dairy: #fcfcfc;
+    --cornflower: #e7e9fc;
+    --Slate: #434455;
+    --green: #31d0aa;
+    --lightslate: #8e8f99;
+
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: var(--white);
+    color: var(--Slate);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+h1, h2 h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: inherit;
+}
+
+.list {
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 120px 0;
+}
+
+.notoppadding {
+    padding: 0;
+}
+
+.menu,
+.navigation,
+.navmenu,
+.contactmenu {
+    display: flex;
+    align-items: center;
+}
+
+.navmenu {
+    margin-left: 76px;
+}
+
+.address {
+    margin-left: auto;
+}
+
+.navmenu .item:not(:last-child),
+.contactmenu .item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.navmenu .page,
+.contactmenu .contact {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 23px;
+}
+
+.page-header {
+    border-bottom: 1px solid #ececec;
+}
+
+
+/*HEADER*/
+/*Logo*/
+.logo {
+    color: var(--iris);
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.1667;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+.logo-black {
+    color: var(--navyblue);
+}
+
+.logo-white {
+    color: var(--cloud);
+}
+
+
+/*Menu*/
+.navmenu .page {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navmenu .page:hover,
+.navmenu .page:focus,
+.navmenu .page.current,
+.contactmenu .contact:hover,
+.contactmenu .contact:focus {
+    color: var(--ocean);
+}
+
+/*Hero*/
+.hero {
+    background-color: var(--navyblue);
+    padding: 188px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)),
+        url(/images/heroimage.jpg);
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+}
+
+.herotitle {
+    color: var(--WHITE, #FFF);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07143; /* 107.143% */
+    letter-spacing: 1.12px;
+    margin-bottom: 48px;
+}
+
+/*Button*/
+
+.button {
+    cursor: pointer;
+    font-family: inherit;
+    border-color: transparent;
+}
+
+.button.orderservice {
+    background-color: var(--iris);
+    color: var(white);
+    letter-spacing: 0.64px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*Features*/
+
+.features {
+    display:flex;
+}
+
+.features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background-color: var(--cloud);
+    margin-bottom: 8px;
+ 
+}
+
+
+/*What Are We Doing*/
+
+.sectiontitle {
+    margin-bottom: 72px;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11111; /* 111.111% */
+    letter-spacing: 0.72px;
+}
+
+.whatwedo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.whatwedo .item {
+    flex-basis: calc((100% - 48px) / 3);
+}
+
+/*Our Team*/
+
+.ourteam {
+    display: flex;
+}
+
+.ourteam .item {
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+.teambg {
+    background-color: var(--cloud);
+}
+
+.socialteam {
+    display: flex;
+    justify-content: center;
+}
+
+.socialteam .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--iris);
+    color: var(--white);
+    fill: var(--white);
+    border-radius: 50%;
+}
+
+.socialteam .icon-item {
+    margin-right: 24px;
+}
+
+.socialteam .link:hover,
+.socialteam .link:focus, {
+    background-color: var(--ocean);
+}
+
+.teamcontainer .teamrolename {
+    background-color: var(--cloud);
+    justify-content: center;
+}
+
+
+
+/*Customers*/
+
+.customers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.customers .item {
+    flex-basis: calc((100% - 144px) / 6);
+}
+
+
+
+/*Footer*/
+
+.page-footer {
+    background-color: var(--navyblue);
+}
