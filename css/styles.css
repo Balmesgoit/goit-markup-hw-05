@@ -295,12 +295,16 @@ body {
     position: relative;
 }
 
-.navmenu .page{
-    position:relative
-    transition: color 250ms cubic-bezier(0.39, 0.57, 1)
+.navmenu .page {
+    position:relative;
+    transition: color 250ms cubic-bezier(0.4, 0.2, 1)
 }
 
-.navmenu .page:hover:after {
+.navmenu .page:hover {
+    width: 100%;
+}
+
+.navmenu .page::after {
     content: "";
     height: 4px;
     width: 100%;
@@ -312,7 +316,9 @@ body {
     transition: width 250ms cubic-bezier(0.4, 0.2, 1);
 }    
 
-
+.contactmenu .contact {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .headerstudio {
     font-weight: 500;
