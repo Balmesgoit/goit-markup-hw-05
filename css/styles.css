@@ -291,23 +291,17 @@ body {
     letter-spacing: 0.02em;
     color: var(--Slate);
 }
-
-.navmenu .link:hover::after {
-    width: 100%;
-    color: #404bbf;
+.transmenu {
+    position: relative;
 }
 
-.transmenu {
+.navmenu .page{
     position:relative
     transition: color 250ms cubic-bezier(0.39, 0.57, 1)
 }
 
-.transmenu:hover {
-    width: 100%;
-}
-
-.transmenu:hover::after {
-    content: '';
+.navmenu .page:hover:after {
+    content: "";
     height: 4px;
     width: 100%;
     background-color: var(--ocean);
