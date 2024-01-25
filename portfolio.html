@@ -17,43 +17,45 @@
 
 
 <body>
-    <header class="header">
-        <div class="displayflex container">
-        
-            <nav class="navheader">
-                <a href="./index.html" class="webstudio link">Web<span class="studiocolor">Studio</span>
+    <header class="page-header">
+        <div class="container menu">
+            <nav class="navigation">
+                <a href="./index.html" class="link logo">Web<span class="logo-black">Studio</span>
                 </a>
             
                 <!--Menu Area-->             
-                <ul class="list navulheader">
-                    <li class="navulheader-item">
-                        <a class="headerlink link" href="./index.html">
-                            <p class="headerstudio">Studio</p>
+                <ul class="list navmenu">
+                    <li class="item">
+                        <a href="./index.html" class="page current link ">Studio</a>
+                    </li>
+                    <li class="item">
+                        <a 
+                        href="./portfolio.html"
+                        class="page link" 
+                        targer="_blank"
+                        rel="noopener noreferer
+                        ">Portfolio
                         </a>
                     </li>
-                    <li class="navulheader-item">
-                        <a class="headerlink link" href="./portfolio.html">
-                            <p class="headerstudio">Portfolio</p>
-                        </a>
-                    </li>
-                    <li class="navulheader-item">
-                        <a class="headerlink link" href="">
-                            <p class="headerstudio">Contacts</p>
+                    <li class="item">
+                        <a href="#" 
+                        class="page link" 
+                        targer="_blank" 
+                        rel="noopener noreferer
+                        ">Contacts
                         </a>
                     </li>
                 </ul> 
             </nav>
             
-            <address class="adstyle">
-                <ul class="list navulheader">
-                    <li class="navulheader-item">
-                        <a class="headerlink link" href="mailto:info@devstudio.com">
-                            <p class="concolor">info@devstudio.com</p>
+            <address class="address">
+                <ul class="contactmenu list">
+                    <li class="item">
+                        <a class="link contact" href="mailto:info@devstudio.com">info@devstudio.com
                         </a>
                     </li>
-                    <li class="navulheader-item">
-                        <a class="headerlink link" href="tel:+110001111111">
-                            <p class="concolor">+11 (000) 111-11-11</p>
+                    <li class="item">
+                        <a class="link contact" href="tel:+110001111111">+11 (000) 111-11-11
                         </a>
                     </li>
                 </ul>
@@ -66,7 +68,7 @@
             <div class="container">
             <h1 class="visually-hidden">Portfolio</h1>
             <ul class="list portlistmenu">
-                <li><button type="button" class="portbuttona link">All</button></li>
+                <li><button type="button" class="portbuttona current link">All</button></li>
                 <li><button type="button" class="portbuttona link">Web Site</button></li>
                 <li><button type="button" class="portbuttona link">App</button></li>
                 <li><button type="button" class="portbuttona link">Design</button></li>
@@ -75,42 +77,44 @@
             
             <!--Menu 2nd List-->
             <ul class="plisttwo">
-                <li class="porttwolist">
-                    <a class="portlink" href="">
-                        <div class="portimagediv">
-                            <img src="./images/port1.jpg" alt="port1" width="360"/>
-                            <p class="portdivp"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
-                        </div>
-                        <div class="portdivtwo">
-                            <h2 class="portimage">Banking App Interface Concept</h2>
-                            <p class="portpar">App</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="porttwolist">
-                    <a class="portlink" href="">
-                        <div class="portimagediv">
-                            <img src="./images/port2.jpg" alt="port1" width="360"/>
-                            <p class="portdivp"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
-                        </div>
-                        <div class="portdivtwo">
-                            <h2 class="portimage">Cashless Payment</h2>
-                            <p class="portpar">Marketing</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="porttwolist">
-                    <a class="portlink" href="">
-                        <div class="portimagediv">
-                            <img src="./images/port3.jpg" alt="port1" width="360"/>
-                            <p class="portdivp"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
-                        </div>
-                        <div class="portdivtwo">
-                            <h2 class="portimage">Meditation App</h2>
-                            <p class="portpar">App</p>
-                        </div>
-                    </a>
-                </li>
+                <div>
+                    <li class="porttwolist">
+                        <a class="portlink" href="">
+                            <div class="portimagediv">
+                                <img src="./images/port1.jpg" alt="port1" width="360"/>
+                                <p class="portdivp"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                            </div>
+                            <div class="portdivtwo">
+                                <h2 class="portimage">Banking App Interface Concept</h2>
+                                <p class="portpar">App</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="porttwolist">
+                        <a class="portlink" href="">
+                            <div class="portimagediv">
+                                <img src="./images/port2.jpg" alt="port1" width="360"/>
+                                <p class="portdivp"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                            </div>
+                            <div class="portdivtwo">
+                                <h2 class="portimage">Cashless Payment</h2>
+                                <p class="portpar">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="porttwolist">
+                        <a class="portlink" href="">
+                            <div class="portimagediv">
+                                <img src="./images/port3.jpg" alt="port1" width="360"/>
+                                <p class="portdivp"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                            </div>
+                            <div class="portdivtwo">
+                                <h2 class="portimage">Meditation App</h2>
+                                <p class="portpar">App</p>
+                            </div>
+                        </a>
+                    </li>
+                </div>
                 <li class="porttwolist">
                     <a class="portlink" href="">
                         <div class="portimagediv">

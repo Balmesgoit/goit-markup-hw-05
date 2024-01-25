@@ -72,7 +72,8 @@ address {
 .menu,
 .navigation,
 .navmenu,
-.contactmenu {
+.contactmenu,
+.porlistmenu {
     display: flex;
     align-items: center;
 }
@@ -221,27 +222,50 @@ address {
     flex-basis: calc((100% - 48px) / 3);
 }
 
+
+
 /*Our Team*/
-
-.ourteam {
-    display: flex;
-}
-
-.ourteam .item {
-    flex-basis: calc((100% - 72px) / 4);
-}
-
 .teambg {
     background-color: var(--cloud);
 }
 
+.ourteam {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;   
+}
+
+.ourteam .item {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    justify-content: center;
+    align-items: center;
+}
+ 
+.teamcontainer {
+    display: flex;
+    border-radius: 0px 0px 4px 4px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 232px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
 .socialteam {
     display: flex;
-    justify-content: center;
 }
 
 .socialteam .link {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 40px;
@@ -252,22 +276,15 @@ address {
     border-radius: 50%;
 }
 
-.socialteam .icon-item {
-    margin-right: 24px;
-}
 
 .socialteam .link:hover,
 .socialteam .link:focus, {
     background-color: var(--ocean);
 }
 
-.teamcontainer .teamrolename {
-    background-color: var(--cloud);
-    justify-content: center;
+.name {
+    margin: 0 0 0 0;
 }
-
-
-
 /*Customers*/
 
 .customers {
@@ -286,4 +303,194 @@ address {
 
 .page-footer {
     background-color: var(--navyblue);
+}
+
+/*Portfolio*/
+
+/*Row 1*/
+
+.portlistmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+.portlistmenu .portbuttona.current {
+    background-color: var(--ocean);
+    color: var(--white);
+}
+
+.portbuttona {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #4d5ae5;
+    background-color: #F4F4FD;
+    cursor: pointer;
+    padding: 12px 24px 12px;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+    transition:
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portbuttona:hover {
+    color:#FFFFFF;
+    background-color: #404bbf;
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portbuttona:focus {
+    color:#FFFFFF;
+    border: 1px solid transparent;
+    background-color: #404bbf;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*Portfolio Header Block Elements*/
+.portheader {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.portcontainer {
+   display: flex;
+}
+
+.portnav {
+    align-items: center;
+}
+
+.portlogo {
+    margin-right: 76px;
+}
+
+.portitem {
+    margin-right: 40px;
+}
+
+.portitem:last-child {
+    margin-right: 0;
+}
+
+.portadlist {
+    margin-right: 40px;
+}
+
+.portadlist:last-child {
+    margin-right: 0;
+}
+
+
+/*Row 2*/
+
+.portlink {
+    text-decoration: none;
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portlink:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
+}
+
+.portlink:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
+}
+
+.portimagediv {
+    position: relative;
+    overflow: hidden;
+}
+
+.portdivp {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--cloud);
+    padding: 40px 32px;
+    background-color: var(--web);
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.portimage {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.portpar {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.portfooter {
+    background-color: #2e2f42;
+}
+
+.portstudio {
+    color: #f4f4fd;
+}
+
+
+/*Row 1 Block Elements*/
+
+.portsection {
+    padding: 96px 0 120px 0;
+}
+
+.portfolioheader {
+    display: none;
+}
+
+/*Row 2 Block Elements*/
+
+.plisttwo {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    row-gap: 48px;
+}
+
+.porttwolist {
+    display: flex;
+    flex-wrap: wrap;
+    flexbasis: calc((100% - 48px) / 3);
+    
+}
+
+.portlistpic-item:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.portlistpic-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.portdivtwo {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
