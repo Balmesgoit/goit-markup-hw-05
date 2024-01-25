@@ -103,7 +103,7 @@ address {
 }
 
 
-/*HEADER*/
+
 /*Logo*/
 .logo {
     color: var(--iris);
@@ -292,12 +292,21 @@ body {
     color: var(--Slate);
 }
 
-.namenu .page:hover::after {
+.navmenu .link:hover::after {
     width: 100%;
     color: #404bbf;
 }
 
-.navmenu .item::after {
+.navmenu .page {
+    position:relative;
+    transition: color 250ms cubic-bezier(0.39, 0.57, 1)
+}
+
+.navmenu .page:hover {
+    width: 100%;
+}
+
+.navmenu .page:hover::after {
     content: '';
     height: 4px;
     width: 100%;
@@ -305,9 +314,11 @@ body {
     border-radius: 2px;
     position: absolute;
     left: 0;
-    bottom: -28px;
-    transition: width 250ms cubic-bezier(0.2, 0.4, 1 )
-}
+    bottom: -25px;
+    transition: width 250ms cubic-bezier(0.4, 0.2, 1);
+}    
+
+
 
 .headerstudio {
     font-weight: 500;
@@ -685,7 +696,9 @@ body {
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     opacity: 1;
-    transition: opacity 250ms cubic cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity:
+    250ms cubic cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -708,10 +721,10 @@ body {
     min-height: 584px;
     background-color: var(--dairy);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    box-radius: 4px;
-    
-    transform: translate(-50%, -50%), scale (1);
+        
+    translate: (-50%, -50%), scale (1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
 }
 
 .modal-close {
