@@ -312,7 +312,7 @@ body {
     border-radius: 2px;
     position: absolute;
     left: 0;
-    bottom: -25px;
+    bottom: -1px;
     transition: width 250ms cubic-bezier(0.4, 0.2, 1);
 }    
 
@@ -864,12 +864,14 @@ body {
     letter-spacing: 0.02em;
     color: var(--cloud);
     padding: 40px 32px;
-    background-color: var(--web);
+    background-color: var(--iris);
     height: 100%;
     width: 100%;
-    transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.portdivp::after {
+    transform: translate (100%);
 }
 
 .portimage {
