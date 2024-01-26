@@ -294,10 +294,10 @@ body {
     width: 100%;
 }
 
-.navmenu .page:hover::after{
+.navmenu .page::after{
     content: "";
     height: 4px;
-    width: 100%;
+    width: 0;
     background-color: var(--ocean);
     border-radius: 2px;
     position: absolute;
