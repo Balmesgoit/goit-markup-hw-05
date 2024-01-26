@@ -883,8 +883,8 @@ body {
     transform: translate (100%);
 }
 
-.plisttwo .portlink.portdiv:hover,
-.plisttwo .portlink.portdiv:focus {
+.portlink .portdiv:hover,
+.portlink .portdiv:focus {
     transform: translateY(0%);
 }
 
