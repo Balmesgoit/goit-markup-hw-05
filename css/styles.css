@@ -701,7 +701,7 @@ body {
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition:
-    opacity 250ms cubic cubic-bezier(0.4, 0, 0.2, 1);
+    opacity 250ms cubic cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -867,6 +867,7 @@ body {
     position: absolute;
     top: 0;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cloud);
@@ -880,6 +881,11 @@ body {
 
 .portdivp::after {
     transform: translate (100%);
+}
+
+.plisttwo .portlink.portdiv:hover,
+.plisttwo .portlink.portdiv:focus {
+    transform: translateY(0%);
 }
 
 .portimage {
