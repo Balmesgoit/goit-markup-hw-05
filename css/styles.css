@@ -756,6 +756,7 @@ body {
 .modal-close:hover {
     background-color: var(--ocean);
     border: none;
+    fill: var(--white);
 }
 
 .modal-close-icon {
