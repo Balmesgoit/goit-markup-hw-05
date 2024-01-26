@@ -311,9 +311,7 @@ body {
 }
 
 .item .contact,
-.item .page,
-.soclist-item .soclistlink,
-.footli .soclistlink {
+.item .page {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -538,9 +536,6 @@ body {
 .soclist-item {
     width: 40px;
     height: 40px;
-    position: relative;
-    transition: 
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soclistlink {
@@ -551,9 +546,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--web);
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 
 
@@ -562,6 +556,10 @@ body {
     background-color: var(--ocean);
 }
 
+.footli .soclistlink,
+.soclist-item .soclistlink {
+    transition: color 250ms cubic-bezier(0.4, 0.2, 1);
+}
 
 .svgsoc {
     fill: #F4F4FD;
