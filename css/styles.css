@@ -292,7 +292,6 @@ body {
 
 .navmenu .page:hover {
     width: 100%;
-    transition: transform;
 }
 
 .navmenu .page:hover::after {
