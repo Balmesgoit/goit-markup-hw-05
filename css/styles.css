@@ -294,7 +294,7 @@ body {
     width: 100%;
 }
 
-.navmenu .page:hover::after {
+.navmenu .page:hover::after{
     content: "";
     height: 4px;
     width: 100%;
